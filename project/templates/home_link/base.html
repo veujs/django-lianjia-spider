@@ -1,0 +1,31 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>
+        {% block title %}
+        Django-Python爬取链家二手房信息
+        {% endblock %}
+    </title>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+
+<body>
+{% block content %}
+{% endblock %}
+<footer>
+    {% block footer %}
+    {% endblock %}
+</footer>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
+
+
+
+
+
